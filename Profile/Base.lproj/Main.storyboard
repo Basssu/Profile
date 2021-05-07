@@ -22,45 +22,104 @@
                                     <constraint firstAttribute="height" constant="320" id="MK6-TS-7Uu"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhoneメンターのフィルだよ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us4-BA-7tE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us4-BA-7tE">
                                 <rect key="frame" x="16" y="380" width="382" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DE5-Rp-0rM">
-                                <rect key="frame" x="141" y="792" width="132" height="38"/>
-                                <color key="backgroundColor" red="0.0" green="0.70588235294117641" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
-                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
-                                <state key="normal" title="プロフィール">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="tapButton1" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ohd-Jq-jKE"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhoneメンターのフィルだよ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N0-14-cJS">
+                                <rect key="frame" x="16" y="425" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gdd-wC-eIe">
+                                <rect key="frame" x="16" y="738" width="382" height="92"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="j0B-6K-Mlw">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DE5-Rp-0rM">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="38"/>
+                                                <color key="backgroundColor" red="0.0" green="0.70588235294117641" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                                <state key="normal" title="名前">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tapButton1" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ohd-Jq-jKE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXI-HK-FJA">
+                                                <rect key="frame" x="199" y="0.0" width="183" height="38"/>
+                                                <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                                <state key="normal" title="スポーツ">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tapButton2" destination="BYZ-38-t0r" eventType="touchUpInside" id="5rV-zI-8DZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QhY-7Q-rvn">
+                                        <rect key="frame" x="0.0" y="54" width="382" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xya-bC-Iun">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="38"/>
+                                                <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                                <state key="normal" title="好きな食べ物">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tapButton3" destination="BYZ-38-t0r" eventType="touchUpInside" id="wFc-Jg-PpA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qc8-1C-rx8">
+                                                <rect key="frame" x="199" y="0.0" width="183" height="38"/>
+                                                <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                                <state key="normal" title="プロフィール">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tapButton4" destination="BYZ-38-t0r" eventType="touchUpInside" id="cs7-mR-XDd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DE5-Rp-0rM" secondAttribute="bottom" constant="32" id="2cr-gF-T60"/>
-                            <constraint firstItem="DE5-Rp-0rM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CFi-VV-bRH"/>
+                            <constraint firstItem="6N0-14-cJS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1gr-iR-L5X"/>
+                            <constraint firstItem="gdd-wC-eIe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="50v-7D-BcZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gYz-7i-zRs" secondAttribute="trailing" id="EMv-bl-tPu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6N0-14-cJS" secondAttribute="trailing" constant="16" id="IYs-7p-Pme"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gdd-wC-eIe" secondAttribute="bottom" constant="32" id="JIM-hB-GtX"/>
                             <constraint firstItem="Us4-BA-7tE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RU5-TD-YP7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Us4-BA-7tE" secondAttribute="trailing" constant="16" id="Uak-a7-ahL"/>
+                            <constraint firstItem="6N0-14-cJS" firstAttribute="top" secondItem="Us4-BA-7tE" secondAttribute="bottom" constant="16" id="VzS-Tl-V8b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gdd-wC-eIe" secondAttribute="trailing" constant="16" id="byj-eL-o2p"/>
                             <constraint firstItem="gYz-7i-zRs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gqC-rM-rtm"/>
                             <constraint firstItem="gYz-7i-zRs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kP3-Ae-Rne"/>
                             <constraint firstItem="Us4-BA-7tE" firstAttribute="top" secondItem="gYz-7i-zRs" secondAttribute="bottom" constant="16" id="ttR-b8-ak3"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="profileCommentlabel" destination="Us4-BA-7tE" id="e6j-Wi-83P"/>
+                        <outlet property="profileCommentlabel" destination="6N0-14-cJS" id="6yM-KM-J4J"/>
                         <outlet property="profileImageView" destination="gYz-7i-zRs" id="eLj-O5-PHk"/>
+                        <outlet property="profileLabel" destination="Us4-BA-7tE" id="Lry-ni-Qz7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="134"/>
+            <point key="canvasLocation" x="140.57971014492756" y="133.92857142857142"/>
         </scene>
     </scenes>
     <resources>
